@@ -1,0 +1,385 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Shaun's Fine Dinnning by Nordic nature</title>
+		<link href="css/main.css" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+		<div class="container">
+			<h1 class="hidden">S'S Fine Dinning Reservation Page</h1>
+			<header class="mainheader">
+				<div class="logoheader">
+					<img src="images/logo/headerlogo.png" alt="logo">
+				</div>
+				<nav class="mainnav">
+					<h2 class="hidden">Main Navgation</h2>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="#">About</a></li>
+						<li><a href="menu.html">Menu</a></li>
+						<li><a href="#">Event</a></li>
+						<li class="selected"><a href="reservation.html">Reservation</a></li>
+					</ul>
+				</nav>
+			</header>	
+		
+
+			<section id="reservecontent">
+				<h2 class="hidden">Booking form</h2>
+				
+				<div id="Rcontent">
+					<div class="howtobook">
+						<h3>HOW TO BOOK:</h3>
+						<div>
+							<p>1.Enter Information Below</p>
+							<p>2.Wait For A Confirmation Email</p>
+							<p>3.Pre-Payment</p>
+							<p>4.Come & Enjoy</p>
+							<p>5.Refer A Friend To Eat</p>
+						</div>
+					</div>
+
+					<div class="formtitle">
+						<h3> Reserve a Table</h3>
+					</div>
+
+					<div class="reservepattern">
+						<img class="reservepattern1" src="images/reservation_page/reserve_page_pattern1.png" alt="pattern">
+						<img class="reservepattern2" src="images/reservation_page/reserve_page_pattern.png" alt="pattern">
+					</div>
+
+
+
+					<form id="bookform" action="form.php" method="post">
+						<div class="form-wrapper">
+							<div id="title">
+								<label class="title">
+									<span>Title*</span>
+								</label>
+							
+								<select class="sexselect">
+									<option value="Mr.">Mr.</option>
+									<option value="Mrs.">Mrs.</option>
+									<option value="Ms.">Ms.</option>
+								</select>
+							</div>
+						</div>
+
+
+					 	<div id="name">
+					 		<label>
+					 			<span>Name*</span>
+					 		</label>
+					 	
+					 		<label>
+					 			<input type="text" name="fname" required>
+					 				<span>First name</span>
+					 		</label>	
+
+					 		<label>
+								<input type="text" name="lname" required>
+					 				<span>Last name</span>
+				 			</label>
+					 		
+						</div>
+				
+
+
+
+
+						<div id="age">
+							<label>
+								<span>Age</span>
+							</label>
+							<div>
+								<label>
+									<input type="number" name="age">
+								</label>
+							</div>	
+						</div>
+
+
+
+
+
+						<div id="email">
+							<label>
+								<span>Email*</span>
+							</label>
+							<div>
+								<label>
+									<input type="email" name="email" required>
+								</label>
+							</div>
+						</div>
+
+
+
+
+
+						<div id="phonenumber">
+							<label>
+								<span>Phone Number</span>
+							</label>
+							<div>
+								<label>
+									<input type="text" name="phonenumber" required>
+								</label>
+							</div>
+						</div>
+
+
+
+						<div id="time">
+							<label>
+								<span>Time*</span>
+								<span class="timewarning">*Not All Times Will Be Available. We will Confirm Your Time Via Email.</span>
+							</label>
+							<div>
+								<select>
+									<option value="time">11:00AM</option>
+									<option value="time">11:30AM</option>
+									<option value="time">12:00PM</option>
+									<option value="time">12:30PM</option>
+									<option value="time">6:00 PM</option>
+									<option value="time">6:30 PM</option>
+									<option value="time">7:00 PM</option>
+									<option value="time">7:30 PM</option>
+									<option value="time">8:00 PM</option>
+									<option value="time">8:30 PM</option>
+									<option value="time">9:00 PM</option>
+								</select>
+							</div>
+							
+						</div>
+
+
+
+
+						<div id="date">
+							<label>
+								<span>Date*</span>
+							</label>
+							<label>
+								<input type="date" required>
+							</label>
+
+						</div>
+
+
+
+						<div id="number">
+							<label>
+								<span>Number of Guest*</span>
+								<span class="guestnumberwarning">*For Booking Over 4 Guests. please See Booking Policy & Contact Us via Email.</span>
+							</label>
+
+							<div>
+								<select>
+									<option value="1">1</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+								</select>
+							</div>
+
+						</div>
+
+
+
+						<div id="menuselect">
+							<label>
+								<span>Menu Selection*</span>
+							</label>
+							<div>
+								<select>
+									<option value="Tasting Menu - 7 courses">Tasting Menu - 7 courses</option>
+									<option value="Balance Menu - 12 courses">Balance Menu - 12 courses</option>
+									<option value="Experience Menu - 18 courses">Experience Menu - 18 courses</option>
+									<option value="Wine Menu">Wine Pairings (optional)</option>        
+								</select>
+							</div>
+							
+						</div>
+
+						<div id="requirements">
+							<label>
+								<span>Dietary Requirements*</span>
+								<span class="requirementswarning">* * Please Provide Each Guests Name, Restrictions &/Or Preferences</span>
+							</label>
+							<div>
+								<input type="text" name="requirements" placeholder="Allergies/Dislikes/Preferences">
+							</div>
+							
+						</div>
+
+
+						<div id="policy">
+							<label>
+								<span>Agreement Policy*</span>
+								<span class="policywarning">By Clicking  "I Agree" . You Agree To Our "Terms And Condition" And "Cancellation Policy" Of S'S Fine Dinning And Understand The Details Stipulated By Each Policy In Their Entirety.
+								</span>
+							</label>
+						</div>
+
+						<div class="option">
+							<label>
+								<input type="checkbox" name="checkbox" value="I Agree"/>I Agree</label>
+						</div>
+
+
+
+						<div id="bookbutton">
+					    	<input class="book" type="submit" value="Book"/>
+					    </div>
+					</form>
+				</div>
+		
+
+
+
+
+
+
+
+
+
+
+			<div id="contactcontent">
+				<div class="directionstitle">
+					<hr>
+				
+					<h3>Directions</h3>
+
+					<hr>
+				</div>
+
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2922.2048404736383!2d-81.29782288423947!3d42.910720708139785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882ef6d809de5405%3A0x707f0874f222cd8c!2zTWFpbiBTdCwgTG9uZG9uLCBPTiwg5Yqg5ou_5aSn!5e0!3m2!1szh-CN!2sae!4v1606879074078!5m2!1szh-CN!2sae"></iframe>
+
+				<div id="contacttitle">
+					<hr>
+					<h3>CONTACT</h3>
+					<hr>
+	
+				</div>
+
+				
+				<div class="contactaddress">
+					<img src="images/reservation_page/location_icon.png" alt="location_icon">
+					<h4>Address</h4>
+					<p>123 Main St , LONDON, ON, CANADA</p>
+					
+				</div>
+
+				<div class="contactphone">
+					<img src="images/reservation_page/tellphone_icon.png" alt="tellphone_icon">
+					<h4>Phone</h4>
+					<p>123-888888</p>
+				</div>
+
+				<div class="contactemail">
+					<img src="images/reservation_page/email_icon.png" alt="email_icon">
+					<h4>Email</h4>
+					<p>ssfinedinning@gmail.com</p>
+					
+				</div>
+
+				<div class="openhour">
+					<img src="images/reservation_page/clock_icon.png" alt="clock_icon">
+					<h4>Opening Hours</h4>
+					<p>7 DAYS A WEEK</p>
+					<p>LUNCH: 11:00AM - 2:00PM</p>
+					<p>DINNER: 6:00PM - 11:00PM</p>
+					
+				</div>
+
+
+				
+
+			
+
+			</div>
+
+
+		</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			<footer class="reservationfooter">
+				<h2 class="hidden">Footer</h2>
+				<div class="footercontact">
+					<h3 class="hidden">Footer Contact Info</h3>
+					<p class="contact1">123 Main St , LONDON, ON, CANADA</p>
+					<p class="contact2">7 DAYS A WEEK</p>
+					<P class="contact3">LUNCH: 11:00AM - 2:00PM</P>
+					<P class="contact4">DINNER: 6:00PM - 11:00PM</P>
+					<P class="contact5">Reservation number 123-88888</P>
+				</div>
+
+				<div class="logofooter">
+					<h3 class="hidden">Footer logo</h3>
+					<img class=" logofooterimg" src="images/logo/footerlogo.png" alt="footer logo">
+				</div>
+				
+				<div class="socialmedia">
+					<h3 class="hidden">Social Media</h3>
+					<ul id="footericon">
+						<li id="facebook">
+							<a href="http://www.facebook.com">
+								<img src="images/social_media_icon/facebookicon.png" alt="fackbook">
+							</a>
+						</li>
+
+						<li id="ins">
+							<a href="https://www.instagram.com/shaun_wng/">
+								<img src="images/social_media_icon/insicon.png" alt="instagram">
+							</a>
+						</li>
+
+						<li id="twitter">
+							<a href="https://www.twitter.com/">
+								<img src="images/social_media_icon/twittericon.png"   alt="twitter">
+							</a>
+						</li>
+
+					
+						
+					</ul>
+				
+
+						<div class="copyright">
+							<h3 class="hidden">Footer copyright</h3>
+							<p class="copyright1">©2020</p>
+							<p class="copyright2">S’S Fine Dinning by Shaun W.</p>
+							<p class="copyright3">All rights reserved</p>
+						</div>
+
+
+				</div>
+			</footer>
+		</div>
+	</body>
+</html>
